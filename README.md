@@ -9,7 +9,7 @@ composer install
 
 ## .env del BackEnd
 
-Dentro del directorio donde clonamos el FrontEnd, debemos de crear un archivo llamado `.env` y colocar el siguiente contenido:
+Dentro del directorio donde clonamos el BackEnd, debemos de crear un archivo llamado `.env` y colocar el siguiente contenido:
 
 
 ```bash
