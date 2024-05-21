@@ -49,3 +49,17 @@ Route::middleware(['auth:sanctum'])->group(function () {
     // route to login security
     Route::get('logout', [AuthController::class, 'logout']);
 });
+
+//rutas Deporte
+Route::post('crearDeporte', [SportsController::class, 'crearDeporte']);
+Route::get('listarDeportes', [SportsController::class, 'listarDeportes']);
+Route::get('consultarDeportes/{id}', [SportsController::class, 'consultarDeportes']);
+Route::put('editarDeportes/{id}', [SportsController::class, 'editarDeportes']);
+Route::put('desactivarDeporte/{id}', [SportsController::class, 'desactivarDeporte']);
+
+//rutas Patrocinadores
+Route::post('crearPatrocinador', [sponsorsController::class, 'crearPatrocinador']);
+Route::get('listarPatrocinadores', [sponsorsController::class, 'listarPatrocinadores']);
+Route::get('consultarPatrocinadores/{id}', [sponsorsController::class, 'consultarPatrocinadores']);
+Route::put('editarPatrocinadores/{id}', [sponsorsController::class, 'editarPatrocinadores']);
+Route::put('desactivarPatrocinador/{id}', [sponsorsController::class, 'desactivarPatrocinador']);
