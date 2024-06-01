@@ -36,7 +36,7 @@ class MunicipiosController extends Controller
                 return response()->json($validator->errors(), Response::HTTP_BAD_REQUEST);
             }
 
-            $municipio = Municipio::create($request->all());
+            $municipio = Municipios::create($request->all());
             return response()->json([
                 'message' => 'Municipio creado exitosamente',
                 'status' => true,
