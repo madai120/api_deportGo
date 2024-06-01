@@ -28,8 +28,9 @@ class MunicipiosController extends Controller
     {
         try {
             $validator = Validator::make($request->all(), [
-                'municipio' => 'required|string|max:255',
-                'departamento' => 'required|string|max:255'
+                'Municipio' => 'required|string|max:255',
+                'Departamento' => 'required|string|max:255'
+
             ]);
 
             if ($validator->fails()) {
