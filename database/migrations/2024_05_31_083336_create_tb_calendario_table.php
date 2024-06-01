@@ -18,14 +18,14 @@ class CreateTbCalendarioTable extends Migration
             $table->boolean('estado')->default(true);
             $table->integer('id_arbitro')->nullable(true);
             $table->string('id_equipo1')->nullable(false);
-              $table->string('id_equipo2')->nullable(false);
+            $table->string('id_equipo2')->nullable(false);
             $table->integer('id_deportes')->nullable(true);
             $table->date('fecha')->nullable(true);
-            $table->time('hora')->default(true);
-            $table->string('direccion',255)->nullable(true);
+            $table->time('hora')->nullable();
+            $table->string('direccion', 255)->nullable(true);
             $table->integer('resultadoA')->nullable(true);
             $table->integer('resultadoB')->nullable(true);
-            $table->string('Cancha',255)->nullable(true);
+            $table->string('Cancha', 255)->nullable(true);
             $table->timestamps();
         });
     }
